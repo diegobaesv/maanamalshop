@@ -42,7 +42,7 @@ function cargarProductos() {
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="sr-only">Next</span>
                                     </a>
-              </div>`;
+                </div>`;
 
               
                 //htmlProducto += `<img src="${producto.imagenes[0]}" class="card-img-top" alt="${producto.nombre}">`;
@@ -51,18 +51,20 @@ function cargarProductos() {
                                     <h5 class="card-title">${producto.marca}</h5>
                                     <p class="producto-nombre">${producto.nombre}</p>`;
                 
+                htmlProducto += `<p class="producto-descripcion">${producto.descripcion}</p>`;
+
+                
                 htmlProducto += `<div class="precios">`;
-
                     htmlProducto += `<p class="producto-precio-oferta">S/ ${producto.precioOferta}</p>`;
-
                     if(producto.precio != producto.precioOferta){
                         htmlProducto +=`<p class="producto-precio">S/ ${producto.precio}</p>`;
                     }
-
-
                 htmlProducto += `</div>`;
 
-                //htmlProducto += `<a href="#"  style="display:hidden;" class="stretched-link">Ver detalles</a>`;
+
+
+
+                htmlProducto += `<a href="#"  style="display:hidden;" class="stretched-link"></a>`;
 
 
                 htmlProducto += `</div>
