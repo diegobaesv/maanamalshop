@@ -10,8 +10,7 @@
             "imagenes": [
                 "https://scontent.flim38-1.fna.fbcdn.net/v/t45.5328-4/398849712_25231551263098735_1857873827556799153_n.jpg?stp=dst-jpg_s960x960&_nc_cat=106&ccb=1-7&_nc_sid=247b10&_nc_eui2=AeESztRG8PHYa2NUVFVcUvUuGAO8c4X8vNAYA7xzhfy80FBRD4SHgWL3Zc4VQ13WK29NIQ5Yhd-VE3Y8P6dGTTAs&_nc_ohc=n6rsAnAmdZ0AX8hKTDV&_nc_ht=scontent.flim38-1.fna&oh=00_AfDPju8jkAlcJVz6wGCaSuWQogNT7qAOPVAGY5aKbqIeZg&oe=6591232C",
                 "https://scontent.flim38-1.fna.fbcdn.net/v/t45.5328-4/406603005_7053259054743654_2875881891003979620_n.jpg?stp=dst-jpg_p720x720&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_eui2=AeFD5VD0Jyc6RNcZbdmsT-SgjEnFMp9cSXWMScUyn1xJdZgRbcVBG_xpV2PxPhoGIfDVitSsjfkLj_xD6xI9SRa3&_nc_ohc=gCPSfU2-wd0AX93MLVt&_nc_ht=scontent.flim38-1.fna&oh=00_AfAm45cIKzKWMgVpP5rq7AScTVzMvI3IlxOPC8UR5RI6PQ&oe=6591BC1A"
-            ],
-            "categoria": "Categoría A"
+            ]
         },
         {
             "id": 2,
@@ -23,21 +22,80 @@
             "imagenes": [
                 "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg",
                 "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg"
-            ],
-            "categoria": "Categoría B"
-        }
-        
-    ],
-    "categorias": [
-        {
-            "idCategoria": 1,
-            "nombre": "Categoría A",
-            "descripcion": "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg"
+            ]
         },
         {
-            "idCategoria": 2,
-            "nombre": "Categoría B",
-            "descripcion": "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg"
+            "id": 1,
+            "nombre": "RELOJ DAMA ORO ROSA",
+            "marca": "AZZORTI",
+            "descripcion": "Descripción detallada del Producto 1.",
+            "precio": 119,
+            "precioOferta": 50,
+            "imagenes": [
+                "https://scontent.flim38-1.fna.fbcdn.net/v/t45.5328-4/398849712_25231551263098735_1857873827556799153_n.jpg?stp=dst-jpg_s960x960&_nc_cat=106&ccb=1-7&_nc_sid=247b10&_nc_eui2=AeESztRG8PHYa2NUVFVcUvUuGAO8c4X8vNAYA7xzhfy80FBRD4SHgWL3Zc4VQ13WK29NIQ5Yhd-VE3Y8P6dGTTAs&_nc_ohc=n6rsAnAmdZ0AX8hKTDV&_nc_ht=scontent.flim38-1.fna&oh=00_AfDPju8jkAlcJVz6wGCaSuWQogNT7qAOPVAGY5aKbqIeZg&oe=6591232C",
+                "https://scontent.flim38-1.fna.fbcdn.net/v/t45.5328-4/406603005_7053259054743654_2875881891003979620_n.jpg?stp=dst-jpg_p720x720&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_eui2=AeFD5VD0Jyc6RNcZbdmsT-SgjEnFMp9cSXWMScUyn1xJdZgRbcVBG_xpV2PxPhoGIfDVitSsjfkLj_xD6xI9SRa3&_nc_ohc=gCPSfU2-wd0AX93MLVt&_nc_ht=scontent.flim38-1.fna&oh=00_AfAm45cIKzKWMgVpP5rq7AScTVzMvI3IlxOPC8UR5RI6PQ&oe=6591BC1A"
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "PRODUCTO 2",
+            "marca": "AZZORTI",
+            "descripcion": "Descripción detallada del Producto 2.",
+            "precio": 150,
+            "precioOferta": 150,
+            "imagenes": [
+                "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg",
+                "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg"
+            ]
+        },
+        {
+            "id": 1,
+            "nombre": "RELOJ DAMA ORO ROSA",
+            "marca": "AZZORTI",
+            "descripcion": "Descripción detallada del Producto 1.",
+            "precio": 119,
+            "precioOferta": 50,
+            "imagenes": [
+                "https://scontent.flim38-1.fna.fbcdn.net/v/t45.5328-4/398849712_25231551263098735_1857873827556799153_n.jpg?stp=dst-jpg_s960x960&_nc_cat=106&ccb=1-7&_nc_sid=247b10&_nc_eui2=AeESztRG8PHYa2NUVFVcUvUuGAO8c4X8vNAYA7xzhfy80FBRD4SHgWL3Zc4VQ13WK29NIQ5Yhd-VE3Y8P6dGTTAs&_nc_ohc=n6rsAnAmdZ0AX8hKTDV&_nc_ht=scontent.flim38-1.fna&oh=00_AfDPju8jkAlcJVz6wGCaSuWQogNT7qAOPVAGY5aKbqIeZg&oe=6591232C",
+                "https://scontent.flim38-1.fna.fbcdn.net/v/t45.5328-4/406603005_7053259054743654_2875881891003979620_n.jpg?stp=dst-jpg_p720x720&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_eui2=AeFD5VD0Jyc6RNcZbdmsT-SgjEnFMp9cSXWMScUyn1xJdZgRbcVBG_xpV2PxPhoGIfDVitSsjfkLj_xD6xI9SRa3&_nc_ohc=gCPSfU2-wd0AX93MLVt&_nc_ht=scontent.flim38-1.fna&oh=00_AfAm45cIKzKWMgVpP5rq7AScTVzMvI3IlxOPC8UR5RI6PQ&oe=6591BC1A"
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "PRODUCTO 2",
+            "marca": "AZZORTI",
+            "descripcion": "Descripción detallada del Producto 2.",
+            "precio": 150,
+            "precioOferta": 150,
+            "imagenes": [
+                "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg",
+                "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg"
+            ]
+        },
+        {
+            "id": 1,
+            "nombre": "RELOJ DAMA ORO ROSA",
+            "marca": "AZZORTI",
+            "descripcion": "Descripción detallada del Producto 1.",
+            "precio": 119,
+            "precioOferta": 50,
+            "imagenes": [
+                "https://scontent.flim38-1.fna.fbcdn.net/v/t45.5328-4/398849712_25231551263098735_1857873827556799153_n.jpg?stp=dst-jpg_s960x960&_nc_cat=106&ccb=1-7&_nc_sid=247b10&_nc_eui2=AeESztRG8PHYa2NUVFVcUvUuGAO8c4X8vNAYA7xzhfy80FBRD4SHgWL3Zc4VQ13WK29NIQ5Yhd-VE3Y8P6dGTTAs&_nc_ohc=n6rsAnAmdZ0AX8hKTDV&_nc_ht=scontent.flim38-1.fna&oh=00_AfDPju8jkAlcJVz6wGCaSuWQogNT7qAOPVAGY5aKbqIeZg&oe=6591232C",
+                "https://scontent.flim38-1.fna.fbcdn.net/v/t45.5328-4/406603005_7053259054743654_2875881891003979620_n.jpg?stp=dst-jpg_p720x720&_nc_cat=109&ccb=1-7&_nc_sid=247b10&_nc_eui2=AeFD5VD0Jyc6RNcZbdmsT-SgjEnFMp9cSXWMScUyn1xJdZgRbcVBG_xpV2PxPhoGIfDVitSsjfkLj_xD6xI9SRa3&_nc_ohc=gCPSfU2-wd0AX93MLVt&_nc_ht=scontent.flim38-1.fna&oh=00_AfAm45cIKzKWMgVpP5rq7AScTVzMvI3IlxOPC8UR5RI6PQ&oe=6591BC1A"
+            ]
+        },
+        {
+            "id": 2,
+            "nombre": "PRODUCTO 2",
+            "marca": "AZZORTI",
+            "descripcion": "Descripción detallada del Producto 2.",
+            "precio": 150,
+            "precioOferta": 150,
+            "imagenes": [
+                "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg",
+                "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg"
+            ]
         }
+        
     ]
 }
