@@ -11,17 +11,22 @@ function cargarProductos() {
             data.productos.forEach(producto => {
                 const div = document.createElement('div');
                 div.classList.add('col-md-4', 'mb-3','producto-card');
-                div.innerHTML = `
-                        <div class="card">
+                let htmlProducto = `<div class="card">
                         <img src="${producto.imagenes[0]}" class="card-img-top" alt="${producto.nombre}">
                         <div class="card-body">
                             <h5 class="card-title">${producto.marca}</h5>
-                            <p class="card-text">${producto.nombre}</p>
-                            <p class="card-text">Precio: $${producto.precio}</p>
-                        </div>
-                    </div>
+                            <p class="producto-nombre">${producto.nombre}</p>
+                            `;
+                if(producto.precio != producto.precioOferta){
+                    htmlProducto = htmlProducto + `<p class="producto-precio">S/ ${producto.precio}</p>`;
+                }
 
-                `;
+                htmlProducto = htmlProducto + `<p class="producto-precio-oferta">S/ ${producto.precioOferta}</p>
+                                    </div>
+                                </div>`;
+
+
+                div.innerHTML = htmlProducto;
                 contenedorProductos.appendChild(div);
 
 

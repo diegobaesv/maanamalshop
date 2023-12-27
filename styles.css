@@ -16,3 +16,20 @@ div.producto-card div.card div.card-body .card-title{
   font-size: 1rem;
   margin:0px;
 }
+
+div.producto-card div.card div.card-body p.producto-nombre{
+  margin:0px;
+}
+
+div.producto-card div.card div.card-body p.producto-precio{
+  margin:0px;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+div.producto-card div.card div.card-body p.producto-precio-oferta{
+  margin:0px;
+  color:red;
+  font-weight: bold;
+  font-size: 18px;
+}
