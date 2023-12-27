@@ -1,49 +1,18 @@
-/*.card {
-    position: relative;
-    max-width: 270px; 
-  }*/
-  
-  .card-img-top {
-    height: 180px; 
-    object-fit: cover;
-  }
-  
-  .original-price {
-    text-decoration: line-through;
-    color: #6c757d;
-  }
-  
-  .price {
-    font-size: 1.5em;
-    color: #000;
-    margin-left: 5px;
-  }
-  
-  .discount-tag {
-    position: absolute;
-    bottom: 80px; 
-    right: 10px;
-    background-color: violet;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 0.8em;
-  }
-  
-  .stock-info {
-    position: absolute;
-    bottom: 60px;
-    right: 10px;
-    background-color: purple;
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    font-size: 0.8em;
-  }
-  
-  /*.btn-primary {
-    background-color: purple; 
-    border: none;
-    border-radius: 20px; 
-  }*/
-  
+div.producto-card div.card{
+  border:none;
+}
+
+div.producto-card div.card img.card-img-top {
+  height: 180px; 
+  object-fit: cover;
+}
+
+div.producto-card div.card div.card-body{
+  padding:3px;
+}
+
+
+div.producto-card div.card div.card-body .card-title{
+  font-size: 1rem;
+  margin:0px;
+}
