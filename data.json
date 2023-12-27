@@ -1,0 +1,50 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Producto 1",
+            "descripcion": "Descripción detallada del Producto 1.",
+            "precio": 100,
+            "imagenes": [
+                "url_de_la_imagen_1a.jpg",
+                "url_de_la_imagen_1b.jpg"
+            ],
+            "categoria": "Categoría A"
+        },
+        {
+            "id": 2,
+            "nombre": "Producto 2",
+            "descripcion": "Descripción detallada del Producto 2.",
+            "precio": 150,
+            "imagenes": [
+                "url_de_la_imagen_2a.jpg",
+                "url_de_la_imagen_2b.jpg"
+            ],
+            "categoria": "Categoría B"
+        },
+        {
+            "id": 3,
+            "nombre": "Producto 3",
+            "descripcion": "Descripción detallada del Producto 3.",
+            "precio": 200,
+            "imagenes": [
+                "url_de_la_imagen_3a.jpg",
+                "url_de_la_imagen_3b.jpg"
+            ],
+            "categoria": "Categoría A"
+        }
+        
+    ],
+    "categorias": [
+        {
+            "idCategoria": 1,
+            "nombre": "Categoría A",
+            "descripcion": "Descripción de la Categoría A"
+        },
+        {
+            "idCategoria": 2,
+            "nombre": "Categoría B",
+            "descripcion": "Descripción de la Categoría B"
+        }
+    ]
+}
