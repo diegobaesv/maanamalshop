@@ -6,8 +6,8 @@
             "descripcion": "Descripción detallada del Producto 1.",
             "precio": 100,
             "imagenes": [
-                "url_de_la_imagen_1a.jpg",
-                "url_de_la_imagen_1b.jpg"
+                "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg",
+                "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg"
             ],
             "categoria": "Categoría A"
         },
@@ -17,8 +17,8 @@
             "descripcion": "Descripción detallada del Producto 2.",
             "precio": 150,
             "imagenes": [
-                "url_de_la_imagen_2a.jpg",
-                "url_de_la_imagen_2b.jpg"
+                "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg",
+                "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg"
             ],
             "categoria": "Categoría B"
         },
@@ -28,8 +28,8 @@
             "descripcion": "Descripción detallada del Producto 3.",
             "precio": 200,
             "imagenes": [
-                "url_de_la_imagen_3a.jpg",
-                "url_de_la_imagen_3b.jpg"
+                "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg",
+                "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg"
             ],
             "categoria": "Categoría A"
         }
@@ -39,12 +39,12 @@
         {
             "idCategoria": 1,
             "nombre": "Categoría A",
-            "descripcion": "Descripción de la Categoría A"
+            "descripcion": "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg"
         },
         {
             "idCategoria": 2,
             "nombre": "Categoría B",
-            "descripcion": "Descripción de la Categoría B"
+            "descripcion": "https://img.freepik.com/vector-premium/vector-icono-imagen-predeterminado-pagina-imagen-faltante-diseno-sitio-web-o-aplicacion-movil-no-hay-foto-disponible_87543-11093.jpg"
         }
     ]
 }
