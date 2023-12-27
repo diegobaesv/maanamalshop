@@ -10,7 +10,7 @@ function cargarProductos() {
             const contenedorProductos = document.getElementById('productos');
             data.productos.forEach(producto => {
                 const div = document.createElement('div');
-                div.classList.add('col-md-4', 'mb-3','producto-card');
+                div.classList.add('col-6','col-md-4', 'mb-3','producto-card');
                 let htmlProducto = `<div class="card">
                         <img src="${producto.imagenes[0]}" class="card-img-top" alt="${producto.nombre}">
                         <div class="card-body">

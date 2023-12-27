@@ -1,3 +1,8 @@
+body{
+  font-family: 'Trebuchet MS', sans-serif;
+
+}
+
 div.producto-card div.card{
   border:none;
 }
@@ -14,6 +19,7 @@ div.producto-card div.card div.card-body{
 
 div.producto-card div.card div.card-body .card-title{
   font-size: 1rem;
+  font-weight: bold;
   margin:0px;
 }
 
@@ -31,5 +37,5 @@ div.producto-card div.card div.card-body p.producto-precio-oferta{
   margin:0px;
   color:red;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
 }
