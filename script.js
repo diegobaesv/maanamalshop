@@ -14,11 +14,10 @@ function cargarProductos() {
                 div.innerHTML = `
                         <div class="card" style="border:none;">
                         <img src="${producto.imagenes[0]}" class="card-img-top" alt="${producto.nombre}">
-                        <div class="card-body">
-                            <h5 class="card-title">${producto.marca}</h5>
-                            <p class="card-text">${producto.descripcion}</p>
+                        <div class="card-body" style="padding:3px;">
+                            <h5 class="card-title" style="font-size: 1rem; margin:0px;">${producto.marca}</h5>
+                            <p class="card-text">${producto.nombre}</p>
                             <p class="card-text">Precio: $${producto.precio}</p>
-                            <button onclick="agregarAlCarrito(${producto.id})" class="btn btn-primary">Agregar al Carrito</button>
                         </div>
                     </div>
 
