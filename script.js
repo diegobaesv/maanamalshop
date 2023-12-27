@@ -14,6 +14,8 @@ function cargarProductos() {
                 div.classList.add('col-6','col-md-4', 'mb-3','producto-card');
                 let htmlProducto = `<div class="card">`;
 
+                console.log(producto)
+
                 //carrousel imagenes
                 htmlProducto += `<div id="carouselExampleSlidesOnly_id${iProduct}" class="carousel slide" data-ride="carousel">
                                     <div class="carousel-inner">`;
@@ -44,8 +46,10 @@ function cargarProductos() {
                                     </a>
                 </div>`;
 
-
-                htmlProducto += `<div class="overlay-agotado">AGOTADO</div>`;
+                if(!producto.disponible){
+                    htmlProducto += `<div class="overlay-agotado">AGOTADO</div>`;
+                }
+                
               
                 //htmlProducto += `<img src="${producto.imagenes[0]}" class="card-img-top" alt="${producto.nombre}">`;
 
