@@ -11,18 +11,26 @@ function cargarProductos() {
             data.productos.forEach(producto => {
                 const div = document.createElement('div');
                 div.classList.add('col-6','col-md-4', 'mb-3','producto-card');
-                let htmlProducto = `<div class="card">
-                        <img src="${producto.imagenes[0]}" class="card-img-top" alt="${producto.nombre}">
-                        <div class="card-body">
-                            <h5 class="card-title">${producto.marca}</h5>
-                            <p class="producto-nombre">${producto.nombre}</p>
-                            `;
-                if(producto.precio != producto.precioOferta){
-                    htmlProducto = htmlProducto + `<p class="producto-precio">S/ ${producto.precio}</p>`;
-                }
+                let htmlProducto = `<div class="card">`;
 
-                htmlProducto = htmlProducto + `<p class="producto-precio-oferta">S/ ${producto.precioOferta}</p>
-                                    </div>
+                //carrousel imagenes
+                htmlProducto += `<img src="${producto.imagenes[0]}" class="card-img-top" alt="${producto.nombre}">`;
+
+                htmlProducto += `<div class="card-body">
+                                    <h5 class="card-title">${producto.marca}</h5>
+                                    <p class="producto-nombre">${producto.nombre}</p>`;
+                
+                htmlProducto += `<div class="precios">`;
+
+                    htmlProducto += `<p class="producto-precio-oferta">S/ ${producto.precioOferta}</p>`;
+
+                    if(producto.precio != producto.precioOferta){
+                        htmlProducto +=`<p class="producto-precio">S/ ${producto.precio}</p>`;
+                    }
+
+                htmlProducto += `</div>`;
+
+                htmlProducto += `</div>
                                 </div>`;
 
 

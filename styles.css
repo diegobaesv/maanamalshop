@@ -17,25 +17,35 @@ div.producto-card div.card div.card-body{
 }
 
 
+
 div.producto-card div.card div.card-body .card-title{
-  font-size: 1rem;
+  font-size: 12px;
   font-weight: bold;
   margin:0px;
 }
 
 div.producto-card div.card div.card-body p.producto-nombre{
   margin:0px;
+  color: rgb(100, 100, 100);
 }
+
+div.producto-card div.card div.card-body div.precios{
+  display: flex;
+}
+
 
 div.producto-card div.card div.card-body p.producto-precio{
   margin:0px;
   font-size: 14px;
+  color: rgb(151, 151, 151);
   text-decoration: line-through;
 }
 
 div.producto-card div.card div.card-body p.producto-precio-oferta{
   margin:0px;
-  color:red;
+  color:rgb(255, 0, 76);
   font-weight: bold;
-  font-size: 20px;
+  font-size: 18px;
+  margin-right: 10px;
+
 }
