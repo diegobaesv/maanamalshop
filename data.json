@@ -1,7 +1,6 @@
 {
     "productos": [
         {
-            "id": 1,
             "nombre": "RELOJ DAMA ORO ROSA",
             "marca": "AZZORTI",
             "descripcion": "Descripción detallada del Producto 1.",
@@ -13,7 +12,6 @@
             ]
         },
         {
-            "id": 2,
             "nombre": "PRODUCTO 2",
             "marca": "AZZORTI",
             "descripcion": "Descripción detallada del Producto 2.",
@@ -25,7 +23,6 @@
             ]
         },
         {
-            "id": 1,
             "nombre": "RELOJ DAMA ORO ROSA",
             "marca": "AZZORTI",
             "descripcion": "Descripción detallada del Producto 1.",
@@ -37,7 +34,6 @@
             ]
         },
         {
-            "id": 2,
             "nombre": "PRODUCTO 2",
             "marca": "AZZORTI",
             "descripcion": "Descripción detallada del Producto 2.",
@@ -49,7 +45,6 @@
             ]
         },
         {
-            "id": 1,
             "nombre": "RELOJ DAMA ORO ROSA",
             "marca": "AZZORTI",
             "descripcion": "Descripción detallada del Producto 1.",
@@ -61,7 +56,6 @@
             ]
         },
         {
-            "id": 2,
             "nombre": "PRODUCTO 2",
             "marca": "AZZORTI",
             "descripcion": "Descripción detallada del Producto 2.",
@@ -73,7 +67,6 @@
             ]
         },
         {
-            "id": 1,
             "nombre": "RELOJ DAMA ORO ROSA",
             "marca": "AZZORTI",
             "descripcion": "Descripción detallada del Producto 1.",
@@ -85,7 +78,6 @@
             ]
         },
         {
-            "id": 2,
             "nombre": "PRODUCTO 2",
             "marca": "AZZORTI",
             "descripcion": "Descripción detallada del Producto 2.",

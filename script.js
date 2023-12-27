@@ -8,13 +8,44 @@ function cargarProductos() {
         .then(response => response.json())
         .then(data => {
             const contenedorProductos = document.getElementById('productos');
+            let iProduct=0;
             data.productos.forEach(producto => {
                 const div = document.createElement('div');
                 div.classList.add('col-6','col-md-4', 'mb-3','producto-card');
                 let htmlProducto = `<div class="card">`;
 
                 //carrousel imagenes
-                htmlProducto += `<img src="${producto.imagenes[0]}" class="card-img-top" alt="${producto.nombre}">`;
+                htmlProducto += `<div id="carouselExampleSlidesOnly_id${iProduct}" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner">`;
+
+                producto.imagenes.forEach(img => {
+                    if(producto.imagenes[0] == img){
+                        htmlProducto += `<div class="carousel-item active ">
+                                         <img class="d-block w-100 card-img-top" src="${img}">
+                                    </div>`;
+                    } else{
+                        htmlProducto += `<div class="carousel-item">
+                                         <img class="d-block w-100 card-img-top" src="${img}">
+                                    </div>`;
+                    }
+                    
+                });
+
+               
+  
+                htmlProducto += `</div>
+                                    <a class="carousel-control-prev" href="#carouselExampleSlidesOnly_id${iProduct}" role="button" data-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleSlidesOnly_id${iProduct}" role="button" data-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="sr-only">Next</span>
+                                    </a>
+              </div>`;
+
+              
+                //htmlProducto += `<img src="${producto.imagenes[0]}" class="card-img-top" alt="${producto.nombre}">`;
 
                 htmlProducto += `<div class="card-body">
                                     <h5 class="card-title">${producto.marca}</h5>
@@ -28,7 +59,11 @@ function cargarProductos() {
                         htmlProducto +=`<p class="producto-precio">S/ ${producto.precio}</p>`;
                     }
 
+
                 htmlProducto += `</div>`;
+
+                //htmlProducto += `<a href="#"  style="display:hidden;" class="stretched-link">Ver detalles</a>`;
+
 
                 htmlProducto += `</div>
                                 </div>`;
@@ -37,28 +72,11 @@ function cargarProductos() {
                 div.innerHTML = htmlProducto;
                 contenedorProductos.appendChild(div);
 
+                iProduct++;
 
-                /**
-                 * 
-                 * 
-                    div class="card">
-                        <img src="${producto.imagenes[0]}" class="card-img-top"  alt="${producto.nombre}">
-                            <div class="card-body">
-                                <h5 class="card-title">${producto.nombre}</h5>
-                                <p class="card-text">
-                                    <span class="text-muted original-price">${producto.precio}</span>
-                                    <span class="price">${producto.precio}</span>
-                                </p>
-                                <div class="discount-tag">35% off</div>
-                                <div class="stock-info">21 left</div>
-                                <!--a href="#" class="btn btn-primary">ADD TO CART</a-->
-                                <button onclick="agregarAlCarrito(${producto.id})" class="btn btn-primary">Agregar al Carrito</button>
-                            </div>
-                        </div>
-                 */
             });
         })
-        .catch(error => console.error('Error al cargar los productos:', error));
+        .catch(error => alert('Error al cargar los productos:', error));
 }
 
 function agregarAlCarrito(idProducto) {

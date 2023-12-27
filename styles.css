@@ -7,6 +7,10 @@ div.producto-card div.card{
   border:none;
 }
 
+/*div.producto-card div.card:hover{
+  background-color: rgb(236, 236, 236);
+}*/ 
+
 div.producto-card div.card img.card-img-top {
   height: 180px; 
   object-fit: cover;
