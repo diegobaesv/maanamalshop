@@ -12,7 +12,24 @@ function cargarProductos() {
                 const div = document.createElement('div');
                 div.classList.add('col-md-4', 'mb-3');
                 div.innerHTML = `
-                        <div class="card" style="width: 18rem;">
+                        <div class="card">
+                        <img src="${producto.imagenes[0]}" class="card-img-top" alt="${producto.nombre}">
+                        <div class="card-body">
+                            <h5 class="card-title">${producto.nombre}</h5>
+                            <p class="card-text">${producto.descripcion}</p>
+                            <p class="card-text">Precio: $${producto.precio}</p>
+                            <button onclick="agregarAlCarrito(${producto.id})" class="btn btn-primary">Agregar al Carrito</button>
+                        </div>
+                    </div>
+
+                `;
+                contenedorProductos.appendChild(div);
+
+
+                /**
+                 * 
+                 * 
+                    div class="card">
                         <img src="${producto.imagenes[0]}" class="card-img-top"  alt="${producto.nombre}">
                             <div class="card-body">
                                 <h5 class="card-title">${producto.nombre}</h5>
@@ -22,25 +39,10 @@ function cargarProductos() {
                                 </p>
                                 <div class="discount-tag">35% off</div>
                                 <div class="stock-info">21 left</div>
-                                <a href="#" class="btn btn-primary">ADD TO CART</a>
+                                <!--a href="#" class="btn btn-primary">ADD TO CART</a-->
+                                <button onclick="agregarAlCarrito(${producto.id})" class="btn btn-primary">Agregar al Carrito</button>
                             </div>
                         </div>
-                `;
-                contenedorProductos.appendChild(div);
-
-
-                /**
-                 * 
-                 * 
-                    <div class="card">
-                        <img src="${producto.imagenes[0]}" class="card-img-top" alt="${producto.nombre}">
-                        <div class="card-body">
-                            <h5 class="card-title">${producto.nombre}</h5>
-                            <p class="card-text">${producto.descripcion}</p>
-                            <p class="card-text">Precio: $${producto.precio}</p>
-                            <button onclick="agregarAlCarrito(${producto.id})" class="btn btn-primary">Agregar al Carrito</button>
-                        </div>
-                    </div>
                  */
             });
         })
