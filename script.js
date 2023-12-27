@@ -4,25 +4,28 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function cargarProductos() {
-    // Aquí debes cargar los productos desde tu JSON
-    // Ejemplo:
-    const productos = [
-        { id: 1, nombre: 'Producto 1', descripcion: 'Descripción 1', precio: 100 },
-        // Más productos...
-    ];
-
-    const contenedorProductos = document.getElementById('productos');
-    productos.forEach(producto => {
-        const div = document.createElement('div');
-        div.classList.add('producto');
-        div.innerHTML = `
-            <h3>${producto.nombre}</h3>
-            <p>${producto.descripcion}</p>
-            <p>Precio: $${producto.precio}</p>
-            <button onclick="agregarAlCarrito(${producto.id})">Agregar al Carrito</button>
-        `;
-        contenedorProductos.appendChild(div);
-    });
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            const contenedorProductos = document.getElementById('productos');
+            data.productos.forEach(producto => {
+                const div = document.createElement('div');
+                div.classList.add('col-md-4', 'mb-3');
+                div.innerHTML = `
+                    <div class="card">
+                        <img src="${producto.imagenes[0]}" class="card-img-top" alt="${producto.nombre}">
+                        <div class="card-body">
+                            <h5 class="card-title">${producto.nombre}</h5>
+                            <p class="card-text">${producto.descripcion}</p>
+                            <p class="card-text">Precio: $${producto.precio}</p>
+                            <button onclick="agregarAlCarrito(${producto.id})" class="btn btn-primary">Agregar al Carrito</button>
+                        </div>
+                    </div>
+                `;
+                contenedorProductos.appendChild(div);
+            });
+        })
+        .catch(error => console.error('Error al cargar los productos:', error));
 }
 
 function agregarAlCarrito(idProducto) {
