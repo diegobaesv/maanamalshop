@@ -3,6 +3,7 @@
         {
             "id": 1,
             "nombre": "Reloj Dama Oro Rosa",
+            "marca": "Azzorti",
             "descripcion": "Descripción detallada del Producto 1.",
             "precio": 100,
             "imagenes": [
@@ -14,6 +15,7 @@
         {
             "id": 2,
             "nombre": "Producto 2",
+            "marca": "Azzorti",
             "descripcion": "Descripción detallada del Producto 2.",
             "precio": 150,
             "imagenes": [

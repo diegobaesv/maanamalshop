@@ -12,10 +12,10 @@ function cargarProductos() {
                 const div = document.createElement('div');
                 div.classList.add('col-md-4', 'mb-3');
                 div.innerHTML = `
-                        <div class="card">
+                        <div class="card" style="border:none;">
                         <img src="${producto.imagenes[0]}" class="card-img-top" alt="${producto.nombre}">
                         <div class="card-body">
-                            <h5 class="card-title">${producto.nombre}</h5>
+                            <h5 class="card-title">${producto.marca}</h5>
                             <p class="card-text">${producto.descripcion}</p>
                             <p class="card-text">Precio: $${producto.precio}</p>
                             <button onclick="agregarAlCarrito(${producto.id})" class="btn btn-primary">Agregar al Carrito</button>
