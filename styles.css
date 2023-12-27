@@ -3,6 +3,10 @@ body{
 
 }
 
+.producto-card {
+  position: relative; /* This makes the positioning context for the absolute elements inside */
+}
+
 div.producto-card div.card{
   border:none;
 }
@@ -19,6 +23,21 @@ div.producto-card div.card img.card-img-top {
 div.producto-card div.card div.card-body{
   padding:3px;
 }
+
+div.overlay-agotado {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  color: white;
+  background-color: rgba(255, 46, 46, 0.5);  
+  text-align: center;
+  font-size: 2em; /* Large text size */
+  padding: 10px;
+  font-weight: bold;
+  display: block;
+}
+
 
 
 

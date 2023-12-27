@@ -32,7 +32,7 @@ function cargarProductos() {
                 });
 
                
-  
+                //controles de carrousel
                 htmlProducto += `</div>
                                     <a class="carousel-control-prev" href="#carouselExampleSlidesOnly_id${iProduct}" role="button" data-slide="prev">
                                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -44,6 +44,8 @@ function cargarProductos() {
                                     </a>
                 </div>`;
 
+
+                htmlProducto += `<div class="overlay-agotado">AGOTADO</div>`;
               
                 //htmlProducto += `<img src="${producto.imagenes[0]}" class="card-img-top" alt="${producto.nombre}">`;
 
@@ -52,6 +54,7 @@ function cargarProductos() {
                                     <p class="producto-nombre">${producto.nombre}</p>`;
                 
                 htmlProducto += `<p class="producto-descripcion">${producto.descripcion}</p>`;
+                
 
                 
                 htmlProducto += `<div class="precios">`;
@@ -64,7 +67,7 @@ function cargarProductos() {
 
 
 
-                htmlProducto += `<a href="#"  style="display:hidden;" class="stretched-link"></a>`;
+                //htmlProducto += `<a href="#"  style="display:hidden;" class="stretched-link"></a>`;
 
 
                 htmlProducto += `</div>
