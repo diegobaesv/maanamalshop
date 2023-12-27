@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 function cargarProductos() {
-    fetch('data.json')
+    fetch('https://raw.githubusercontent.com/diegobaesv/maanamalshop/main/data.json')
         .then(response => response.json())
         .then(data => {
             const contenedorProductos = document.getElementById('productos');
@@ -12,6 +12,26 @@ function cargarProductos() {
                 const div = document.createElement('div');
                 div.classList.add('col-md-4', 'mb-3');
                 div.innerHTML = `
+                        <div class="card" style="width: 18rem;">
+                        <img src="${producto.imagenes[0]}" class="card-img-top"  alt="${producto.nombre}">
+                            <div class="card-body">
+                                <h5 class="card-title">${producto.nombre}</h5>
+                                <p class="card-text">
+                                    <span class="text-muted original-price">${producto.precio}</span>
+                                    <span class="price">${producto.precio}</span>
+                                </p>
+                                <div class="discount-tag">35% off</div>
+                                <div class="stock-info">21 left</div>
+                                <a href="#" class="btn btn-primary">ADD TO CART</a>
+                            </div>
+                        </div>
+                `;
+                contenedorProductos.appendChild(div);
+
+
+                /**
+                 * 
+                 * 
                     <div class="card">
                         <img src="${producto.imagenes[0]}" class="card-img-top" alt="${producto.nombre}">
                         <div class="card-body">
@@ -21,8 +41,7 @@ function cargarProductos() {
                             <button onclick="agregarAlCarrito(${producto.id})" class="btn btn-primary">Agregar al Carrito</button>
                         </div>
                     </div>
-                `;
-                contenedorProductos.appendChild(div);
+                 */
             });
         })
         .catch(error => console.error('Error al cargar los productos:', error));

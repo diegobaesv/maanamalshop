@@ -2,7 +2,7 @@
     "productos": [
         {
             "id": 1,
-            "nombre": "Producto 1",
+            "nombre": "Reloj Dama Oro Rosa",
             "descripcion": "Descripción detallada del Producto 1.",
             "precio": 100,
             "imagenes": [
