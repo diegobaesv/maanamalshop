@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     cargarProductos();
-    document.getElementById('finalizarCompra').addEventListener('click', enviarWhatsApp);
+    document.getElementById('whatsappButton').addEventListener('click', enviarWhatsApp);
 });
 
 function cargarProductos() {
@@ -14,23 +14,23 @@ function cargarProductos() {
                 div.classList.add('col-6','col-md-4', 'mb-3','producto-card');
                 let htmlProducto = `<div class="card">`;
 
-                console.log(producto)
 
                 //carrousel imagenes
                 htmlProducto += `<div id="carouselExampleSlidesOnly_id${iProduct}" class="carousel slide" data-ride="carousel">
                                     <div class="carousel-inner">`;
 
                 producto.imagenes.forEach(img => {
+
+                    let claseimg = producto.disponible ? 'carousel-item' : 'carousel-item color-gris';
+
                     if(producto.imagenes[0] == img){
-                        htmlProducto += `<div class="carousel-item active ">
-                                         <img class="d-block w-100 card-img-top" src="${img}">
-                                    </div>`;
-                    } else{
-                        htmlProducto += `<div class="carousel-item">
-                                         <img class="d-block w-100 card-img-top" src="${img}">
-                                    </div>`;
+                        claseimg += ' active';
                     }
-                    
+
+                    htmlProducto += `<div class="${claseimg}">
+                                            <img class="d-block w-100 card-img-top" src="${img}"  onClick="agregarAlCarrito(${iProduct})">
+                                    </div>`;
+                   
                 });
 
                
@@ -44,10 +44,12 @@ function cargarProductos() {
                                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                     <span class="sr-only">Next</span>
                                     </a>
-                </div>`;
+                                </div>`;
 
                 if(!producto.disponible){
                     htmlProducto += `<div class="overlay-agotado">AGOTADO</div>`;
+                } else{
+                    htmlProducto += `<div class="overlay-carrito"><img src="https://static-00.iconduck.com/assets.00/checkbox-icon-2048x2048-o0na05za.png"></div>`;
                 }
                 
               
@@ -63,16 +65,12 @@ function cargarProductos() {
                 
                 htmlProducto += `<div class="precios">`;
                     htmlProducto += `<p class="producto-precio-oferta">S/ ${producto.precioOferta}</p>`;
-                    if(producto.precio != producto.precioOferta){
+
+                if(producto.precio != producto.precioOferta) {
                         htmlProducto +=`<p class="producto-precio">S/ ${producto.precio}</p>`;
-                    }
+                }
+
                 htmlProducto += `</div>`;
-
-
-
-
-                //htmlProducto += `<a href="#"  style="display:hidden;" class="stretched-link"></a>`;
-
 
                 htmlProducto += `</div>
                                 </div>`;
@@ -88,16 +86,15 @@ function cargarProductos() {
         .catch(error => alert('Error al cargar los productos:', error));
 }
 
-function agregarAlCarrito(idProducto) {
+function agregarAlCarrito(producto) {
     // Agrega el producto al carrito en Local Storage
-    console.log('Producto agregado:', idProducto);
+    console.log('Producto agregado:', producto);
     // Implementa la lógica de agregar al carrito aquí
 }
 
 function enviarWhatsApp() {
-    // Recupera los datos del carrito del Local Storage
-    // Genera el mensaje para WhatsApp
+    let numeroRemitente = 51936019222;
     const mensaje = 'Hola, quiero realizar un pedido...'; // Modifica con los detalles del pedido
-    const urlWhatsApp = `https://wa.me/1234567890?text=${encodeURIComponent(mensaje)}`;
+    const urlWhatsApp = `https://wa.me/${numeroRemitente}?text=${encodeURIComponent(mensaje)}`;
     window.open(urlWhatsApp, '_blank');
 }
