@@ -49,7 +49,7 @@ function cargarProductos() {
                 if(!producto.disponible){
                     htmlProducto += `<div class="overlay-agotado">AGOTADO</div>`;
                 } else{
-                    htmlProducto += `<div class="overlay-carrito"><img src="https://static-00.iconduck.com/assets.00/checkbox-icon-2048x2048-o0na05za.png"></div>`;
+                    htmlProducto += `<div id="overlaycarrito_${iProduct}" class="overlay-carrito"><img src="https://static-00.iconduck.com/assets.00/checkbox-icon-2048x2048-o0na05za.png"></div>`;
                 }
                 
               
@@ -86,10 +86,21 @@ function cargarProductos() {
         .catch(error => alert('Error al cargar los productos:', error));
 }
 
-function agregarAlCarrito(producto) {
-    // Agrega el producto al carrito en Local Storage
-    console.log('Producto agregado:', producto);
-    // Implementa la lógica de agregar al carrito aquí
+function agregarAlCarrito(iProducto) {
+    var overlay = document.getElementById(`overlaycarrito_${iProducto}`);
+    if(overlay){
+        if (overlay.style.display === "block") {
+            overlay.style.display = "none";
+        } else {
+            overlay.style.display = "block";
+        }
+    } else {
+        console.error(`Elemento overlaycarrito_${iProducto} no encontrado.`);
+    }
+
+
+    console.log('Producto agregado:', iProducto);
+    
 }
 
 function enviarWhatsApp() {
